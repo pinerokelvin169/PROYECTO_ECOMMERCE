@@ -1,0 +1,1022 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 64px;
+  color:#222;
+}
+
+h2{
+  font-size: 46px;
+  line-height: 54px;
+  color:#222;
+}
+
+
+h4{
+  font-size: 20px;
+  color: #222;
+}
+
+h6{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p{
+  font-size: 16px;
+  color: #E0E0E0;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1{
+  margin: 40px 0;
+}
+
+body{
+  width: 100%;
+}
+
+/* Header Start */
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 40px;
+  background: #F0E9DF;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#header img {
+  height: 85px;
+  width: auto;
+}
+
+/* Navbar fix */
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position:relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* HomePage */
+
+#hero{
+  background-image: url("../img/hero_bg5.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 80% top;
+  background-color: #F0E9DF;
+  padding:0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4{
+  
+  padding-bottom: 15px;
+  color: #E0E0E0;
+}
+
+#hero h2{
+  color: #FFFFFF;
+}
+#hero h1{
+  color: #FFFFFF;
+}
+
+#hero button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/button1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130%;
+  background-color: transparent;
+  width: 260px;
+  height: 85px;
+  color: #006D6F;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  filter: brightness(0.9);
+}
+
+#hero button:hover {
+  background-color: #006D6F;
+  transform: scale(1.03);
+  transition: 0.3s ease;
+  
+}
+
+#features{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#features .fe-box{
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0,0,0,0.0300);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+#features .fe-box:hover{
+  box-shadow: 10px 10px 54px rgba(0,0,0,0.3);
+}
+
+#features .fe-box img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#features .fe-box h6{
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: black;
+  background-color: #CBBBA5;
+
+}
+
+#features .fe-box:nth-child(2) h6{
+background-color: #CBBBA5;
+}
+
+#features .fe-box:nth-child(3) h6 {
+  background-color: #CBBBA5;
+}
+
+#features .fe-box:nth-child(4) h6{
+  background-color: #CBBBA5;
+}
+
+#features .fe-box:nth-child(5) h6{
+  background-color: #CBBBA5;
+}
+
+#features .fe-box:nth-child(6) h6{
+  background-color: #CBBBA5;
+}
+
+#products1{
+  text-align: center;
+}
+
+#products1 .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+}
+ #products1 .pro img{
+   width: 50%;
+   border-radius: 20px;
+ }
+
+
+
+#products2{
+  text-align: center;
+}
+
+#products2 .pro{
+  width: 23%;
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+}
+#products2 .pro img{
+  width: 50%;
+  border-radius: 20px;
+}
+
+body {
+      background-color: #f4ede4; 
+      font-family: 'Poppins', sans-serif;
+      color: #3a3a3a;
+    }
+
+    #header {
+      background-color: #f4ede4;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #navbar a {
+      color: #2c2c2c;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    #navbar a:hover, #navbar .active {
+      color: #009688;
+      border-bottom: 2px solid #009688;
+    }
+
+    .titulo-tienda {
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 30px;
+    }
+
+    .titulo-tienda h1 {
+      font-weight: 700;
+      color: #2e2e2e;
+    }
+
+    .titulo-tienda p {
+      color: #009688;
+      font-size: 18px;
+    }
+
+   
+    .card {
+      background-color: #fff;
+      border: none;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .card-body h5 {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .card-body p {
+      color: #009688;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .btn-comprar {
+      background-color: #d2b48c;
+      border: none;
+      font-weight: 600;
+      color: #000;
+      transition: 0.3s;
+    }
+
+    .btn-comprar:hover {
+      background-color: #009688;
+      color: #fff;
+    }
+
+    #hero-tienda {
+        width: 100%;
+        overflow: hidden;
+      }
+
+    .hero-img {
+      width: 100%;
+      height: auto;   /* <— evita recortes */
+      object-fit: contain;
+    }
+
+
+    /* === Página de producto === */
+
+#detalle-producto {
+  background-color: #f4ede4;
+}
+
+#detalle-producto h2 {
+  color: #2e2e2e;
+  font-weight: 700;
+}
+
+#detalle-producto h4 {
+  color: #009688;
+  font-weight: 700;
+}
+
+.miniatura {
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.miniatura:hover {
+  border-color: #009688;
+  transform: scale(1.05);
+}
+
+.btn-talla {
+  background-color: #fff;
+  border: 1px solid #d2b48c;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #3a3a3a;
+  transition: 0.3s ease;
+}
+
+.btn-talla:hover {
+  background-color: #009688;
+  color: #fff;
+  border-color: #009688;
+}
+
+.btn-talla.selected {
+  background-color: #009688;
+  color: #fff;
+  border-color: #009688;
+}
+/* === BOTÓN COMPRAR AHORA === */
+
+#btnComprarAhora {
+  background-color: #d2b48c;   /* mismo tono beige */
+  border: none;
+  font-weight: 600;
+  color: #000;
+  transition: 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#btnComprarAhora:hover {
+  background-color: #009688;  /* verde elegante */
+  color: #fff;
+  transform: scale(1.03);
+}
+
+/* ==========================================================
+   ESTILOS ESPECÍFICOS PARA contactanos.html
+   ========================================================== */
+
+#contacto-hero {
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 0 60px;
+  border-bottom: 2px solid #f4ede4;
+}
+
+#contacto-hero h1 {
+  font-weight: 700;
+  color: #009688;
+}
+
+#contacto-hero p {
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto 0;
+  font-size: 1.1rem;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+#contacto-section {
+  background-color: #f8f8f8;
+  padding: 60px 80px;
+}
+
+.contacto-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  padding: 50px;
+}
+
+/* --- FORMULARIO --- */
+#form-contacto h3 {
+  color: #009688;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.form-control-custom {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Spartan', sans-serif;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control-custom:focus {
+  outline: none;
+  border-color: #009688;
+  box-shadow: 0 0 0 3px rgba(0,150,136,0.15);
+}
+
+textarea.form-control-custom {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.btn-enviar {
+  width: 100%;
+  background-color: #d2b48c;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background-color: #009688;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+/* --- INFORMACIÓN LATERAL --- */
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list h3 {
+  color: #009688;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.info-item i {
+  color: #009688;
+  font-size: 1.2rem;
+  margin-top: 3px;
+}
+
+/* --- FOOTER --- */
+footer {
+  background-color: #f4ede4;
+  color: #222;
+  margin-top: 60px;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+  .contacto-card {
+    grid-template-columns: 1fr;
+    padding: 35px;
+  }
+
+  #contacto-section {
+    padding: 40px 20px;
+  }
+}
+/* 🔍 Barra de búsqueda */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.95);
+  display: none;
+  z-index: 9999;
+}
+
+.search-overlay input {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.search-overlay.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* ===== Panel de búsqueda desplegable ===== */
+.search-panel{
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0,0,0,.06);
+  overflow: hidden;
+  max-height: 0;                 /* colapsado */
+  transition: max-height .25s ease;
+  border-bottom: 1px solid #eee;
+}
+
+/* Suaviza la aparición del contenido */
+.search-panel .container{
+  opacity: 0;
+  transition: opacity .18s ease;
+}
+
+/* Al mostrar: da altura suficiente para la fila (≈72–88px) */
+.search-panel.show{
+  max-height: 92px;              /* ajusta si tu fila es más alta */
+}
+
+.search-panel.show .container{
+  opacity: 1;
+}
+
+/* Estética del input */
+#search-input{
+  font-size: 1.1rem;
+  padding: .6rem .9rem;
+}
+
+#search-input::placeholder{
+  letter-spacing: .05em;
+}
+
+/* =========================================================
+   🔹 SECCIÓN RESPONSIVE FINAL
+   ========================================================= */
+
+/* Tablet y abajo: acomoda header/nav y hero */
+@media (max-width: 991.98px){
+  #header {
+    padding: 12px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #navbar li {
+    padding: 0;
+  }
+
+  #navbar li a {
+    padding: 8px 0;
+    display: block;
+  }
+
+  #header img {
+    height: 64px;
+  }
+}
+
+/* Móvil: tipografía fluida y paddings más pequeños */
+@media (max-width: 768px){
+  /* Secciones más compactas */
+  .section-p1 {
+    padding: 30px 20px;
+  }
+
+  /* HERO */
+  #hero {
+    min-height: 60vh;
+    padding: 0 28px;
+    align-items: flex-start;
+    text-align: left;
+    background-position: center;
+  }
+
+  #hero h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  #hero h2 {
+    font-size: 1.6rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+    max-width: 32ch;
+  }
+
+  #hero button {
+    width: 200px;
+    height: 64px;
+    font-size: 15px;
+    border-radius: 999px;
+  }
+
+  /* Features: 2 por fila si usas .col-6 */
+  #features .col-6 {
+    width: 50%;
+  }
+
+  /* Formulario */
+  #formulario form {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Footer */
+  footer .col-md-4 {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+/* Search panel altura menor en móviles pequeños */
+@media (max-width: 576px){
+  .search-panel.show {
+    max-height: 72px;
+  }
+}
+/* ==========================================================
+   🔹 SOBRE NOSOTROS PAGE
+   ========================================================== */
+
+/* Fondo e imagen principal */
+.sobre-nosotros {
+  position: relative;
+  padding: 120px 100px;
+  background-image: url("../img/sobrenosotros.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 500px;
+  color: white;
+}
+
+/* Overlay oscuro y desenfoque */
+.sobre-nosotros::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 0;
+}
+
+/* Texto sobre la imagen */
+.sobre-nosotros .texto {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.sobre-nosotros .texto h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.sobre-nosotros .texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+/* Sección misión y visión */
+.mision-vision {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #f0e9df;
+  padding: 60px 50px;
+  flex-wrap: wrap;
+}
+
+.card-info {
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  width: 40%;
+  min-width: 280px;
+  margin: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-top: 4px solid #cbb6a3;
+}
+
+.card-info:hover {
+  transform: scale(1.03);
+}
+
+.card-info h3 {
+  color: #008080;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.card-info p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sobre-nosotros {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .mision-vision {
+    flex-direction: column;
+  }
+
+  .card-info {
+    width: 90%;
+  }
+}
+/* ==========================================================
+   CONTACTANOS — estilos unificados (reutilizables)
+   ========================================================== */
+
+/* Paleta (solo si no existen ya) */
+:root{
+  --verde-principal:#198754;
+  --verde-oscuro:#157347;
+  --gris-texto:#222;
+  --gris-secundario:#555;
+  --fondo-contacto:#eef8f3;
+  --footer-beige:#f4ede4;
+}
+
+/* Hero genérico de páginas (mismo look en Tienda/Sobre/Contacto) */
+.page-hero{ 
+  background:#fff; text-align:center; 
+  padding:80px 0 60px; border-bottom:1px solid #e5e5e5;
+}
+.page-title{
+  font-weight:800; color:var(--verde-principal);
+  font-size:clamp(2rem,6vw,3rem); line-height:1.15; margin:0 0 14px;
+}
+.page-subtitle{
+  color:var(--gris-secundario); font-size:clamp(1rem,2.6vw,1.25rem);
+  max-width:600px; margin:0 auto;
+}
+
+/* Contenedor y tarjeta de contacto */
+.contact-wrapper{ padding:60px 8%; background:var(--fondo-contacto); }
+.contact-card{
+  display:grid; grid-template-columns:1.2fr 1fr; gap:50px;
+  background:#fff; border-radius:14px; padding:50px;
+  box-shadow:0 5px 20px rgba(0,0,0,.10);
+  border:2px solid rgba(25,135,84,.05);
+}
+.contact-card h3{ font-weight:700; color:var(--verde-principal); margin-bottom:20px; }
+
+/* Campos del form */
+.form-control-custom{
+  width:100%; padding:12px 14px; border:1px solid #ccc; border-radius:6px;
+  font-family:'Poppins',sans-serif; font-size:.95rem; margin-bottom:15px;
+  transition:border-color .3s, box-shadow .3s;
+}
+.form-control-custom:focus{
+  outline:none; border-color:var(--verde-principal);
+  box-shadow:0 0 0 3px rgba(25,135,84,.15);
+}
+textarea.form-control-custom{ min-height:140px; resize:vertical; }
+
+/* Botón */
+.btn-enviar{
+  width:100%; padding:12px 16px; border:1px solid var(--verde-principal);
+  background:var(--verde-principal); color:#fff; font-weight:700;
+  border-radius:6px; transition:.3s;
+}
+.btn-enviar:hover{ background:var(--verde-oscuro); border-color:var(--verde-oscuro); transform:scale(1.02); }
+
+/* Info lateral */
+.info-list{ list-style:none; padding:0; margin:0; }
+.info-item{ display:flex; align-items:flex-start; gap:12px; color:var(--gris-secundario); font-size:.95rem; margin-bottom:15px; }
+.info-item i{ color:var(--verde-principal); font-size:1.1rem; margin-top:2px; }
+
+
+
+/* Header compacto SOLO en Contacto (agrega class="contact-page" al <body>) */
+@media (max-width: 991.98px){
+  .contact-page #header{ padding:10px 16px; gap:8px; }
+  .contact-page #header .container{
+    display:flex; align-items:center; justify-content:space-between; gap:12px;
+  }
+  .contact-page #navbar{
+    flex-wrap:nowrap; gap:14px; overflow-x:auto; -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .contact-page #navbar::-webkit-scrollbar{ display:none; }
+  .contact-page #navbar li{ padding:0; }
+  .contact-page #navbar a{ padding:8px 0; display:block; }
+}
+
+/* Tarjeta a 1 columna en tablet/móvil */
+@media (max-width: 992px){
+  .contact-card{ grid-template-columns:1fr; padding:35px; }
+}
+
+/* Ajuste del hero en móviles pequeños */
+@media (max-width:576px){
+  .page-hero{ padding:60px 14px 28px; }
+}
+/* =========================
+   FOOTER con alto contraste
+   ========================= */
+
+/* Fondo claro del bloque superior del footer */
+footer {
+  background: #f7f9fb;            /* tono claro similar a la captura */
+  color: #0f1720;                  /* texto base oscuro */
+}
+
+/* Corrige el “p” tenue heredado */
+footer p { 
+  color: #2b2f36;                  /* gris oscuro legible */
+  margin-bottom: .6rem;
+}
+
+/* Enlaces: oscuros y con hover visible */
+footer a {
+  color: #0f1720;                  /* casi negro */
+  text-decoration: none;
+  transition: color .2s ease, opacity .2s ease;
+}
+footer a:hover { 
+  color: #0b8a6f;                  /* verde de tu paleta para hover */
+}
+
+/* Títulos del footer */
+footer h4, 
+footer h5 {
+  color: #0c1116;
+  font-weight: 800;
+}
+
+/* Iconos de la sección “Contáctanos” (rosado como en la captura) */
+footer .fa-solid,
+footer .fa-regular,
+footer .fa-brands {
+  color: #ff4f8f;                  /* pink accent */
+}
+
+/* Franja inferior oscura (copia el look de la screenshot) */
+.footer-bottom, 
+footer .footer-bottom {            /* por si usas la clase nueva o ya existe el div */
+  background: #1f2428;             /* gris carbón */
+  color: #ffffff;
+  text-align: center;
+  padding: .85rem 1rem;
+}
+
+/* Si mantienes el <div class="text-center p-3 bg-dark text-white">,
+   forzamos sus colores para que no dependa de Bootstrap */
+footer .text-center.p-3.bg-dark.text-white {
+  background: #1f2428 !important;
+  color: #fff !important;
+}
+
+/* Ajustes responsivos suaves */
+@media (max-width: 768px){
+  footer .col-md-4 { margin-bottom: 1rem; }
+}
+
+
+
+
+
+
+#header {
+  background-color: #F0E9DF !important;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+#navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#navbar .nav-link:hover {
+  color: #0d6efd;
+}
+
+@media (max-width: 991.98px) {
+  #navbarMenu {
+    background-color: #F0E9DF !important;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #navbar {
+    align-items: flex-start;
+  }
+}
+
+.navbar-toggler i {
+  color: #333;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.search-panel {
+  display: none;
+  background: #F0E9DF !important; 
+  border-bottom: 1px solid #ddd;
+}
+.search-panel.show {
+  display: block;
+}
+
+#header,
+#header .navbar,
+#header #navbar,
+#navbarMenu,
+.navbar-collapse,
+.navbar-nav {
+  background-color: #F0E9DF !important;
+}
+
+#header .nav-link,
+#navbar .nav-link {
+  background-color: transparent !important;
+}
