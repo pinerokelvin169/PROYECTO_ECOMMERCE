@@ -192,6 +192,37 @@ $(document).on("click", ".add-to-cart", function (e) {
     $btn.prop("disabled", false).text(old);
   }, 900);
 });
+// Render de productos en la página tienda
+$(function () {
+  const $grid = $("#grid-tienda");
+  if (!$grid.length) return;
+
+  const cards = Object.values(productos).map(p => `
+    <div class="col-12 col-md-6 col-lg-3">
+      <div class="card h-100 text-center">
+        <a href="producto.html?id=${p.id}" class="text-decoration-none text-dark">
+          <img src="${p.imagenes[0]}" class="card-img-top" alt="${p.nombre}">
+          <div class="card-body">
+            <h5 class="card-title">${p.nombre}</h5>
+            <p>$${p.precio.toFixed(2)}</p>
+          </div>
+        </a>
+        <div class="card-footer bg-transparent border-0">
+          <button 
+            class="btn btn-comprar add-to-cart"
+            data-id="${p.id}"
+            data-nombre="${p.nombre}"
+            data-precio="${p.precio}"
+            data-img="${p.imagenes[0]}">
+            Añadir al carrito
+          </button>
+        </div>
+      </div>
+    </div>
+  `).join("");
+
+  $grid.html(cards);
+});
 
 // ---------- 6) RENDERIZAR CARRITO ----------
 function renderCart() {
