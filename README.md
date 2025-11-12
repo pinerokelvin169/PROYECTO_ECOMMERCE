@@ -27,7 +27,7 @@ El sitio incluye:
 - Paleta de colores en tonos beige y verde, con estilo elegante y minimalista.
 
 ## Publicacion
-[Ver sitio publicado en GitHub Pages](https://pinerokelvin169.github.io/PROYECTO_ECOMMERCE/)
+[Ver sitio publicado en GitHub Pages](https://github.com/pinerokelvin169/PROYECTO_ECOMMERCE/)
 
 ## Estructura del proyecto
 PROYECTO_ECOMMERCE/
