@@ -13,43 +13,63 @@
 </head>
 <body>
 
-  <!-- HEADER -->
-  <section id="header" class="py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="index.html"><img src="img/logo.png" class="logo" alt="Logo" style="height:50px;"></a>
+<!-------------------------------------------------- HEADER ----------------------------------------------------------->
+<section id="header" class="py-3 shadow-sm bg-light sticky-top">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
 
-      <ul id="navbar" class="nav">
-        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
-        <li class="nav-item"><a href="tienda.html" class="nav-link">Tienda</a></li>
+    <!-- Logo -->
+    <a href="index.html">
+      <img src="img/logo.png" alt="Logo" class="logo" style="height:80px;">
+    </a>
 
-        <li class="nav-item"><a href="#" class="nav-link">Sobre nosotros</a></li>
-        <li class="nav-item"><a href="contactanos.html" class="nav-link">Contáctanos</a></li>
-        <li class="nav-item ms-3">
-        <a href="#" class="nav-link" id="open-search" aria-label="Buscar">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </a>
-        </li>
-        <li class="nav-item ms-3">
-          <a href="carrito.html" class="nav-link">
-            <i class="fa-solid fa-cart-shopping"></i>
-            <span id="cart-count" class="badge bg-danger ms-1">0</span>
-          </a>
-        </li>
-      </ul>
+    <!-- Navbar responsive -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler border-0 bg-transparent" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+              aria-controls="navbarMenu" aria-expanded="false" aria-label="Menú">
+        <i class="fa-solid fa-bars fs-3"></i>
+      </button>
 
-    </div>
-  </section>
-  <div id="search-panel" class="search-panel">
+      <!-- Menú colapsable -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+        <ul id="navbar" class="navbar-nav align-items-lg-center">
+          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="tienda.html" class="nav-link">Tienda</a></li>
+          <li class="nav-item"><a href="sobrenosotros.html" class="nav-link">Sobre nosotros</a></li>
+          <li class="nav-item"><a href="contactanos.html" class="nav-link">Contáctanos</a></li>
+
+          <!-- Buscador -->
+          <li class="nav-item ms-lg-3">
+            <a href="#" class="nav-link" id="open-search" aria-label="Buscar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </li>
+
+          <!-- Carrito -->
+          <li class="nav-item ms-lg-3">
+            <a href="carrito.html" class="nav-link">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span id="cart-count" class="badge bg-danger ms-1">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<!-- Panel de búsqueda -->
+<div id="search-panel" class="search-panel">
   <div class="container d-flex align-items-center py-3">
     <i class="fa-solid fa-magnifying-glass me-3"></i>
     <input type="text" id="search-input" class="form-control border-0 shadow-0"
-       placeholder="Buscar..." autocomplete="off">
+           placeholder="Buscar..." autocomplete="off">
     <button class="btn btn-link ms-3 text-dark fs-4" id="close-search" aria-label="Cerrar">
       <i class="fa-solid fa-xmark"></i>
     </button>
   </div>
 </div>
-  <!-- END HEADER -->
 
   <div class="container mt-4">
     <h2>Tu carrito</h2>
