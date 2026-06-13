@@ -1,0 +1,110 @@
+<!DOCTYPE html>  
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Feria de Turismo Mundial</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    
+<body>
+
+    <header>
+        <h1>Feria de Turismo Mundial</h1>
+        <p>¡Bienvenidos a la Feria de Turismo Mundial! Descubre destinos increíbles, ofertas exclusivas y experiencias inolvidables para tus próximas vacaciones. Explora el mundo con nosotros y encuentra el viaje perfecto para ti.</p>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#experiencias">Experiencias</a></li>
+            <li><a href="#opiniones">Opiniones</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>En la Feria de Turismo Mundial, te ofrecemos una amplia variedad de destinos para elegir. Desde playas paradisíacas hasta ciudades vibrantes, tenemos algo para todos los gustos. Explora nuestras secciones de destinos, ofertas y experiencias para planificar tu próximo viaje.</p>
+            
+            <figure>
+                <img src="img/inicio-banner.jpg" alt="Persona planeando un viaje con un mapa y una cámara de fotos">
+                <figcaption>Planifica la aventura de tus sueños con nosotros.</figcaption>
+            </figure>
+        </section>
+
+        <section id="destinos">
+            <h2>Destinos</h2>
+            <p>Descubre los destinos más populares y exóticos del mundo. Desde las playas de Bali hasta las calles de París, encuentra el lugar perfecto para tus vacaciones soñadas.</p>
+            
+            <figure>
+                <img src="img/destinos-banner.jpg" alt="Playa tropical paradisíaca con palmeras y arena blanca">
+                <figcaption>Explora paraísos tropicales y ciudades históricas.</figcaption>
+            </figure>
+        </section>
+
+        <section id="ofertas">
+            <h2>Ofertas</h2>
+            <p>Aprovecha nuestras ofertas exclusivas en vuelos, hoteles y paquetes turísticos. No pierdas la oportunidad de viajar a precios increíbles.</p>
+            
+            <figure>
+                <img src="img/ofertas-banner.jpg" alt="Avión comercial volando entre las nubes durante el atardecer">
+                <figcaption>Descuentos de temporada en vuelos y hospedaje.</figcaption>
+            </figure>
+        </section>
+
+        <section id="experiencias">
+            <h2>Experiencias</h2>
+            <p>Vive experiencias únicas en tus viajes. Desde safaris en África hasta tours gastronómicos en Asia, descubre actividades emocionantes que harán que tu viaje sea inolvidable.</p>
+            
+            <figure>
+                <img src="img/experiencias-banner.jpg" alt="Personas disfrutando de una fogata en un campamento bajo las estrellas">
+                <figcaption>Crea recuerdos que duren para toda la vida.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Nueva Sección: Formulario de Opiniones -->
+        <section id="opiniones">
+            <h2>Déjanos tu opinión</h2>
+            <p>¿Has visitado alguno de nuestros destinos destacados? Cuéntanos tu experiencia y comparte tus comentarios sobre el país que elegiste.</p>
+            
+            <form action="#" method="POST">
+                <div>
+                    <label for="nombre">Tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div>
+                    <label for="pais">Selecciona el país:</label>
+                    <select id="pais" name="pais" required>
+                        <option value="" disabled selected>-- Selecciona un país --</option>
+                        <option value="francia">Francia (París)</option>
+                        <option value="indonesia">Indonesia (Bali)</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="otro">Otro destino</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="comentario">Tu opinión:</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Escribe aquí qué fue lo que más te gustó o tus recomendaciones de viaje..." required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit">Enviar opinión</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Feria de Turismo Mundial. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
